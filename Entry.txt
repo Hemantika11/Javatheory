@@ -1,0 +1,3 @@
+Entry Criteria:The prerequisites that must be achieved before commencing the testing process. 
+Exit Criteria : The conditions that must be met before testing should be concluded.
+

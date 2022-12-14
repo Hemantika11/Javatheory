@@ -1,0 +1,6 @@
+Primitive Data Types: A primitive data type is pre-defined by the programming language. The size and type of variable values are specified, and it has no additional methods.
+
+
+Non-Primitive Data Types: These data types are not actually defined by the programming language but are created by the programmer. They are also called “reference variables” or
+ “object references” since they reference a memory location which stores the data.
+

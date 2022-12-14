@@ -1,0 +1,31 @@
+Feature: Login Testcases
+
+Background: Given user open Browser.
+            And enter Url.
+            And click on login link from homepage
+            And user is on login page
+
+Scenario: User enter valid credential.
+          When user enter username as demo@gmail.com and password as Nop123.
+          And click on login button.
+          Then user able to login successfully.
+ 
+Scenario: User enter invalid credential.
+         When user enter invalid username as 123@gmail.com and password as Nop123.
+         And click on login button.
+         Then user should not able to login successfully.
+
+Scenario: User enter invalid credential.
+          When user enter valid username as demo@gmail.com and invalid password as a123.
+          And click on login button.
+          Then user should not able to login successfully.
+
+Scenario: Password should contain special character.
+          When user enter valid username as demo@gmail.com and password as Nop@123.
+          And click on login button.
+          Then user able to login successfully.
+
+Scenario: User should not start with any special character.
+          When user enter username as &test@gmail.com and password as Nop123.
+          And click on login button.
+          Then user should not able to login successfully.

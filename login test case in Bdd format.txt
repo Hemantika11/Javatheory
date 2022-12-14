@@ -1,0 +1,25 @@
+Feature: Test login functionality
+
+Scenario: Check login is successful with valid credentials
+
+  Given browser is open
+  And user is on login page
+  When user enters username and password
+  And user clicks on login
+  Then user is going to open home page
+   
+  Given I am user
+  When I open browser to URL:www.nopcommerce.com/login
+  And fill incorrect USERNAME AND PASSWORD and press LOGIN
+  Then I see an ERRROR message:"Incorrect username"
+  and a request to TRY AGAIN
+
+  Given I am user
+  When I open browser to URL:www.nopcommerce.com/login
+  And fill correct USERNAME and INCORRECT PASSWORD 
+  and press LOGIN
+  Then I see an ERROR message:"Incorrect password"
+  and a request to TRY AGAIN
+
+  Given I am user
+  When I open browser to 

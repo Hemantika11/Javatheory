@@ -1,0 +1,26 @@
+A class is a group of objects which have  common properties. It is a logical entity.
+
+Java will not allow you to write code randomly, it says whatever the logic, methods variables you want to write,
+   it has to be written in one entity (written somewhere).  It should be wrapped with one entity and this entity is
+   called 'class'. You can any classname.
+
+public static void main
+When the main method is declared public, it means that it can be used outside of this class as well.
+The word static means that we want to access a method without making its objects. As we call the main method without creating any objects.
+The word void indicates that it does not return any value. The main is declared as void because it does not return any value.
+Main is the method, which is an essential part of any Java program.
+
+String[] args
+It is an array where each element is a string, which is named as args. If you run the Java code through a console, you can pass the input parameter. The main() takes it as an input.
+
+String[] args
+It is an array where each element is a string, which is named as args. If you run the Java code through a console, you can pass the input parameter. The main() takes it as an input.
+
+System.out.println();
+The statement is used to print the output on the screen where the system is a predefined class, out is an object of the Print Writer class. The method println prints the text on the screen with a new line. All Java statements end with a semicolon.
+
+
+
+Braces
+The curly brackets are used to group all the commands together. To make sure that the commands belong to a class or a method.
+
